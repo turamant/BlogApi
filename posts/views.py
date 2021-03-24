@@ -25,5 +25,5 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
 class PostList(ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
-    permission_classes = (permissions.IsAuthenticated,)
+    #permission_classes = (permissions.IsAuthenticated,)
 
